@@ -2,10 +2,15 @@
  * main.cpp
  *
  *  Created on: Feb 28, 2016
- *      Author: joel
+ *      Author: Joel, Ryan, Ian
  */
 
 #include <iostream>
+#include <SDL2/SDL.h>
+#include <sdlio.h>
+
+const int SCREENWIDTH = 1080
+const int SCREENHEIGHT = 720
 
 int main()
 {
@@ -13,5 +18,3 @@ int main()
 
 	return 0;
 }
-
-

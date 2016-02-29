@@ -1,11 +1,11 @@
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 #include <stdio.h>
 
 // Screen Dimensions
 const int WIDTH = 640;
 const int HEIGHT = 480;
 
-int main(int argc, char* args[])
+int main(int argc, char * args[])
 {
     // Creating window
     SDL_Window* window = NULL;
@@ -34,7 +34,7 @@ int main(int argc, char* args[])
             SDL_UpdateWindowSurface(window);
 
             // Wait 2 seconds
-            SDL_Delay(2000);
+            SDL_Delay(5000);
         }
     }
 
