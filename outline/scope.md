@@ -13,6 +13,7 @@
 * I want to write something funny/sarcastic (Ryan)
 * Set in the university?
 * Time Travel?
+* Choose to be hero or villain?
 * Actual fighting?
 * Silly fighting using coursework?
 

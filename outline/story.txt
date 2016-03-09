@@ -1,0 +1,85 @@
+The MetaGame
+
+[Player's House]:
+(Player):
+    Sweet!  I got into (University)!
+    They've even got that super convenient for plot development time travel club
+    there!
+
+    I should enroll in my classes.  It's a good thing that they make things easy
+    for game developers by just having one set of classes for each discipline!
+
+{Pick Discipline}
+
+
+*Skip to First Day*
+
+
+[Campus]:
+(Player):
+    Cool, university.  These last few months really flew by though, like
+    seriously, I blinked and here I am.
+
+Orientation Leader:
+    Welcome to (University) University!  You should sign up for some clubs and
+    stuff.
+
+    {Takes (Player) to the only clubs table}
+    Like really, clubs rock.
+
+    {If (Player) tries to leave, Orientation Leader stops him}
+        No!  You can't leave without signing up for a club!  There's so many
+        that you should have no problem picking one
+
+    {Player signs up for club}
+        Club Guy:
+            Welcome to the club!  Our first meeting is today during the break
+            you have between classes, so you have no reason not to come
+
+
+[First Class]:
+(Professor):
+    Hi, this is (Discipline) 101, the class where we teach you how to do school
+    stuff.  You should read the syllabus because it says everything we'll be
+    doing.  Regardless, I'll be taking this class to read the whole
+    thing to all of you.
+
+    {Tutorial}
+    Well, hopefully that makes sense to you, because we'll be doing this the
+    whole semester.  That's everything I had planned for this class, but I'm
+    contractually obligated to keep you for the entire 50 minutes, so just talk
+    with other students I guess.
+
+    {Can talk to students or leave class}
+        -> Leave class
+        (Player):
+            Cool, so that was interesting.  I guess I'll go to that club now
+
+
+[Time Travel Club]:
+(Club leader):
+    Hi
+
+    {If (Player) tries to leave}
+        Ok, looks like you're the only one coming.
+
+        (Player):
+            Really?  I thought this was the only club
+
+        (Club Leader):
+            Technically no, this is just the only one that's accessible to
+            anyone
+
+        (Player):
+            Oh
+
+        (Club Leader):
+            Also, if you hadn't shown up today, I would have made it really
+            awkward for you to come later.
+
+            Anyway, this is the time travel club.  We're building a time machine.
+            Wanna try it?
+
+            {Repeat until (Player agrees)}
+
+    {Time travels}
