@@ -3,16 +3,18 @@
 #include <stdio.h>
 #include <string>
 
+#include "item.h"
+
 class Inventory
 {
 public:
-    std::vector<std::string> weapons;
-    std::vector<std::string> armor;
-    std::vector<std::string> keys;
-    std::vector<std::string> expendables;
+    std::vector<Weapon> weapons;
+    std::vector<Armor> armor;
+    std::vector<Key> keys;
+    std::vector<Expendable> expendables;
 
 private:
-    void add();
-    void drop();
-    void use();
+    void add(Item item);
+    void drop(Item item);
+    void use(Item item);
 };

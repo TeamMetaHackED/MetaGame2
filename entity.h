@@ -3,35 +3,37 @@
 #include <stdio.h>
 #include <string>
 
+#include "sprite.h"
+#include "tools.h"
+
 enum Stats { HP, STR, DEF, SPD, INT, DEX, EXP};
 
 class Entity
 {
 private:
-    int width;
-    int length;
-    int moveSpeed;
-    std::vector<int> position; // (x, y)
+    Sprite sprite;
+
+    Pos moveSpeed;
+    Pos x;
+    Pos y;
 
     Stats stats;
 
-    std::string inventory;
+    vector<item> inventory;
 
 public:
     Entity();
-    void speak();
-    void inventory();
+    virtual void speak();
+    void move(Dir dir);
+    void setPos(Pos x, Pos y);
 };
 
 
 class Player: public Entity
 {
 public:
-    int move();
     void battle();
     void defend();
-    void move();
-    void getInput();
 };
 
 
